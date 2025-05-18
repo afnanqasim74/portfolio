@@ -26,6 +26,9 @@ import nextalgo from "./company/nextalgo.png";
 import dreamsleep from "./company/dreamsleep.png";
 import preesoft from "./company/preesoft.png";
 import weathersnap from "./weathersnap.gif";
+import commoplast from "./commoplast.png";
+import redaction from "./redaction.png";
+import career from "./career-pred.png";
 import Chatbot from "./Chatbot-Rag.png";
 import llm from "./LLM PEFT Training.png";
 import linearvision from "./linearvision.png";
@@ -71,4 +74,7 @@ export {
   preesoft,
   llm,
   Chatbot,
+  career,
+  redaction,
+  commoplast
 };

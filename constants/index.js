@@ -26,6 +26,9 @@ import {
   preesoft,
   llm,
   Chatbot,
+  career,
+  redaction,
+  commoplast,
 
 } from "../src/assets";
 
@@ -54,32 +57,80 @@ const services = [
     icon: web,
   },
   {
-    title: "NLP",
+    title: "TensorFlow",
     icon: mobile,
   },
   {
-    title: "Machine Learning",
-    icon: backend,
-  },
-  {
-    title: "Data Science",
-    icon: creator,
-  },
-  {
-    title: "Deep Learning ",
-    icon: backend,
-  },
-  {
-    title: "GAN's",
-    icon: creator,
-  },
-  {
-    title: "LLM's",
+    title: "PyTorch",
     icon: backend,
   },
   {
     title: "Transformers",
     icon: creator,
+  },
+  {
+    title: "Hugging Face",
+    icon: backend,
+  },
+  {
+    title: "LangChain",
+    icon: mobile,
+  },
+  {
+    title: "LangGraph",
+    icon: web,
+  },
+  {
+    title: "RAG (Retrieval-Augmented Generation)",
+    icon: creator,
+  },
+  {
+    title: "PEFT (LoRA, IA3)",
+    icon: backend,
+  },
+  {
+    title: "CNNs (Convolutional Neural Networks)",
+    icon: creator,
+  },
+  {
+    title: "GANs (Generative Adversarial Networks)",
+    icon: web,
+  },
+  {
+    title: "LLMs (Large Language Models)",
+    icon: backend,
+  },
+  {
+    title: "OCR (Optical Character Recognition)",
+    icon: creator,
+  },
+  {
+    title: "YOLO (Object Detection)",
+    icon: mobile,
+  },
+  {
+    title: "Keras",
+    icon: backend,
+  },
+  {
+    title: "Docker",
+    icon: web,
+  },
+  {
+    title: "Kubernetes",
+    icon: mobile,
+  },
+  {
+    title: "Google Cloud Platform",
+    icon: creator,
+  },
+  {
+    title: "AWS",
+    icon: web,
+  },
+  {
+    title: "Streamlit",
+    icon: backend,
   },
 ];
 
@@ -161,7 +212,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "MAR 2023 – JAN 2024",
     points: [
-      "ine-tuned Hugging Face models for project-specific needs",
+      "Fine-tuned Hugging Face models for project-specific needs",
       "Showcased Python expertise in API development with Flask and multi-processing",
       "Implemented ML algorithms using TensorFlow, Keras, and PyTorch for NLP initiatives.",
       "Enhanced NLP model performance, driving technological progress",
@@ -177,61 +228,53 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Impressive AI Project! The algorithms are cutting-edge, delivering precise results. Kudos to the team for innovation and accuracy!⭐⭐⭐⭐",
-      // "Generative AI with Large Language Models",
-    name: "ikrama1000@gmail.com",
+      "GENERATIVE AI WITH LARGE LANGUAGE MODELS",
+    name: "DeepLearning.AI",
     designation: "",
-    
   },
   {
     testimonial:
-      "Seamless integration! User-friendly interface makes it accessible to all. Excellent work in pushing the boundaries of technology!⭐⭐⭐⭐⭐"
-      ,// "Python for Data Science and Machine Learning Bootcamp",
-    name: "nayabimtiaz123@gmail.com",
+      "PYTHON FOR DATA SCIENCE AND MACHINE LEARNING BOOTCAMP",
+    name: "Udemy",
     designation: "",
-
   },
   {
     testimonial:
-      "Exceptional AI solution! The model's performance exceeded expectations, showcasing the team's expertise. A game-changer in the field!⭐⭐⭐⭐",
-    name: "andrew.smith@gmail.com",
+      "ARTIFICIAL INTELLIGENCE (MACHINE LEARNING & DEEP LEARNING)",
+    name: "National Vocational and Technical Training Commission NAVTTC",
     designation: "",
-    company: "",
-    image: tracy,
+  },
+  {
+    testimonial:
+      "MICROSOFT CERTIFIED: AZURE AI FUNDAMENTALS",
+    name: "Microsoft",
+    designation: "",
+  },
+  {
+    testimonial:
+      "HCIA-BIG DATA",
+    name: "Huawei",
+    designation: "",
+  },
+  {
+    testimonial:
+      "AMAL CAREER-PREP FELLOWSHIP",
+    name: "Amal Academy",
+    designation: "",
+  },
+  {
+    testimonial:
+      "BS COMPUTATIONAL PHYSICS",
+    name: "Univrsity of the Punjab",
+    designation: "",
   }
-  // ,
-  // {
-  //   testimonial:
-  //     "Microsoft Certified: Azure AI Fundamentals",
-  //   name: "Microsoft",
-  //   designation: "",
-  //   company: "",
-  //   image: tracy,
-  // },
-  // {
-  //   testimonial:
-  //     "HCIA-Big Data",
-  //   name: "Huawei",
-  //   designation: "",
-  //   company: "",
-  //   image: tracy,
-  // },
-  // {
-  //   testimonial:
-  //     "Programming in C++: A Hands-on Introduction Specialization",
-  //   name: "Coursera",
-  //   designation: "",
-  //   company: "",
-  //   image: tracy,
-  // },
-
 ];
 
 const projects = [
   {
     name: "LLM PEFT Training",
     description:
-      "Developed FEDml to enhance LLM training, outperforming GPT-3.5 by 12%.· Incorporated PEFT for richer emotional AI interactions.· Improved AI emotional intelligence, enabling empathetic interactions. · Cut GPU costs by 60%, saving $2 million. · Boosted R&D through agile collaboration and innovative methodologies.",
+      "· Developed FEDml to enhance LLM training, outperforming GPT-3.5 by 12%.· Incorporated PEFT for richer emotional AI interactions.· Improved AI emotional intelligence, enabling empathetic interactions. · Cut GPU costs by 60%, saving $2 million. · Boosted R&D through agile collaboration and innovative methodologies.",
       tags: [
         {
           name: "FEDml",
@@ -313,28 +356,119 @@ const projects = [
     
   },
   {
-    name: "Hair Day",
+    name: "AI-Powered Data Redaction",
     description:
-      "An all-inclusive salon experience platform that empowers users to book a wide range of haircare and beauty services, and provides personalized recommendations for their unique needs.",
+      "· Developed an AI-driven solution to automatically detect and redact sensitive information (e.g., addresses, personal identifiers) from scanned PDFs and images, ensuring compliance with data privacy regulations. Utilized OCR (Optical Character Recognition) to extract text and NLP (Natural Language Processing) models to identify and classify sensitive data for precise redaction. Applied computer vision techniques to detect and obscure sensitive content in images, supporting diverse document types and formats. Deployed the solution on AWS EC2 instances, enabling scalable, secure, and high-availability processing of large document volumes. Achieved a 90% reduction in manual redaction time, improving operational efficiency and accuracy in document management workflows.",
     tags: [
       {
-        name: "html",
+        name: "OCR",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "NLP",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Computer Vision",
         color: "pink-text-gradient",
       },
+      {
+        name: "Data Privacy",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AWS EC2",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sensitive Data Detection",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Document Processing",
+        color: "blue-text-gradient",
+      },
     ],
-    image: hairday,
+    image: redaction, // make sure you have imported or defined `redaction` in your assets
+    source_code_link: "https://ai.revdsm.com/",
+  },  
+  {
+    name: "Career-Prediction",
+    description:
+      "· Successfully obtained semi-supervised data comprising 6 thousand rows, with 50 labeled rows. Cleaned the data and applied feature engineering techniques for further analysis. Conducted Exploratory Data Analysis (EDA) to gain insights and understand the data distribution. Employed hierarchical, DBSCAN, and K-means clustering models for unsupervised learning. Deployed the project on Streamlit, enabling users to input numeric values for 15 features.  Utilized the K-means model to predict the user's most suitable career based on the provided inputs.",
+      tags: [
+        {
+          name: "K-Means Clustering",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Streamlit",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Semi-Supervised Learning",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Feature Engineering",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "DBSCAN",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Career Prediction",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "EDA",
+          color: "blue-text-gradient",
+        },
+      ],
+    image: career,
 
     source_code_link: "https://github.com/Sharjeel-Riaz/Hair-Day-Website",
   
   },
+  {
+    name: "CommoPlast Forecasting",
+    description:
+      "· Developed CommoPlast, a Django-based platform forecasting plastic import/export trends (PVC, PET, PP) using time series forecasting and machine learning. Integrated global trade data and built internal APIs for efficient data processing and user interaction. Deployed the application using Docker containers on Alibaba Cloud for scalable and secure cloud operations. Delivered actionable buy/sell recommendations, helping users optimize trading strategies and supply chains. Improved user decision-making efficiency by 30%, enabling higher profitability and streamlined operations.",
+    tags: [
+      {
+        name: "Time Series Forecasting",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Alibaba Cloud",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Internal APIs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Trade Optimization",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: commoplast, // ensure you define or import `commoplast` from your assets
+    source_code_link: "https://commoplast.com/"
+  }
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

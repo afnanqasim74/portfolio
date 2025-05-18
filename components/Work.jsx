@@ -36,7 +36,7 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 gap-1 card-img_hover">
             {/* Link for repo */}
-            <a
+            {/* <a
               href={source_code_link}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,10 +47,10 @@ const ProjectCard = ({
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </a>
+            </a> */}
 
             {/* Link for deployment */}
-            <a
+            {/* <a
               href={project_link}
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const ProjectCard = ({
                 alt="world"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -87,7 +87,7 @@ const Work = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Some things I’ve built</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Projects😉</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -95,12 +95,7 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Explore my portfolio of real-world projects, where I showcase my
-          skills and expertise through compelling examples. Each project comes
-          with a concise description and includes links to code repositories and
-          live demos. These examples showcase my ability to tackle intricate
-          challenges, adapt to various technologies, and efficiently handle
-          project management.
+
         </motion.p>
       </div>
 
