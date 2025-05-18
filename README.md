@@ -8,7 +8,6 @@ This is my personal portfolio, built with [Vite](https://vitejs.dev/),
 [React](https://react.dev/), [Three.js](https://threejs.org/), [Framer Motion](https://www.framer.com/), & hosted
 with [Vercel](https://vercel.com/).
 
-![Demo](https://raw.githubusercontent.com/Sharjeel-Riaz/React/main/Projects/personal-portfolio/src/assets/portfolio.png)
 
 ## Features
 
