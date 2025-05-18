@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import profile from "./profile.jpg";
+import profile from "./profile.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -23,8 +23,11 @@ import threejs from "./tech/threejs.svg";
 import interns from "./company/interns.png";
 import upwork from "./company/upwork.png";
 import nextalgo from "./company/nextalgo.png";
-
+import dreamsleep from "./company/dreamsleep.png";
+import preesoft from "./company/preesoft.png";
 import weathersnap from "./weathersnap.gif";
+import Chatbot from "./Chatbot-Rag.png";
+import llm from "./LLM PEFT Training.png";
 import linearvision from "./linearvision.png";
 import hairday from "./hairday.png";
 
@@ -64,4 +67,8 @@ export {
   mitch,
   kevin,
   tracy,
+  dreamsleep,
+  preesoft,
+  llm,
+  Chatbot,
 };

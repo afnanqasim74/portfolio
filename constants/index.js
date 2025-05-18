@@ -22,6 +22,11 @@ import {
   mitch,
   kevin,
   tracy,
+  dreamsleep,
+  preesoft,
+  llm,
+  Chatbot,
+
 } from "../src/assets";
 
 export const navLinks = [
@@ -119,34 +124,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Machine Learning Engineer (NLP)",
-    company_name: "Kyaas Solutions",
-    icon: interns,
+    title: "AI ENGINEER",
+    company_name: "PREESOFT PVT LTD",
+    icon: preesoft,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "NOV 2024 – CURRENT",
     points: [
-      "Assist in data collection, cleaning, and preprocessing tasks.",
-      "Support feature engineering efforts under senior ML engineers' guidance.",
-      "Develop and implement machine learning models following established guidelines.",
-      "Collaborate with the ML team for model testing and evaluation.",
-      "Learn actively, conduct research on ML techniques, and contribute to ML projects with a proactive and enthusiastic attitude.",
+      "Developed and deployed the AI-powered Ezelogs construction management platform on Google Cloud Platform, leveraging LangGraph and LangChain for agent-based workflow automation and predictive analytics to optimize project lifecycle and resource management.",
+      "Engineered a generative AI chatbot using advanced NLP and agent frameworks to automate appointment booking, email handling, and Google Meet scheduling, enhancing operational efficiency.",
+      "Implemented OCR and NLP-based AI models for automated document compliance and contract review, enabling intelligent extraction and validation of key project data",
+      "Integrated YOLO-based computer vision models for real-time defect detection and quality assurance in field operations, improving on-site safety and compliance.",
+      "Deployed and managed AI models and services on Google Cloud Storage (GCS) buckets and Compute Engine instances, ensuring scalable, secure, and efficient cloud-based operations.",
       
     ],
   },
   {
-    title: "Junior Machine Learning Engineer",
-    company_name: "Creative sol",
-    icon: upwork,
-    iconBg: "#15A800",
-    date: "March 2022 - Jan 2023",
+    title: "MACHINE LEARNING ENGINEER (LLM TRAINER)",
+    company_name: "DREAM SLEEP",
+    icon: dreamsleep,
+    iconBg: "#E6DEDD",
+    date: "JAN 2024 – OCT 2024",
     points: [
-      "Support data collection, cleaning, and preprocessing tasks.",
-      "Collaborate with senior ML engineers on feature engineering and model development.",
-      "Assist in model testing, evaluation, and results documentation.",
-      "Actively learn and expand ML knowledge through research and hands-on tasks.",
-      "Maintain data pipelines, follow coding standards, and contribute to team meetings with enthusiasm.",
+      "Developed FEDml architecture to surpass GPT-3.5 in emotional intelligence benchmarks.",
+      "Utilized PEFT to enhance AI emotional intelligence for more empathetic interactions.",
+      "Reduced GPU costs by 60%, saving the company approximately $2 million.",
+      "Directed agile projects with cross-functional teams, optimizing project outcomes.",
+      "Documented advancements, boosting the company's R&D efforts.",
+      
     ],
   },
+
+  {
+    title: "JUNIOR ML ENGINEER",
+    company_name: "Kyaas Solutions",
+    icon: interns,
+    iconBg: "#E6DEDD",
+    date: "MAR 2023 – JAN 2024",
+    points: [
+      "ine-tuned Hugging Face models for project-specific needs",
+      "Showcased Python expertise in API development with Flask and multi-processing",
+      "Implemented ML algorithms using TensorFlow, Keras, and PyTorch for NLP initiatives.",
+      "Enhanced NLP model performance, driving technological progress",
+      "Leveraged Kubernetes and Docker for improved project deployments",
+      "Enabled smoother model integration into production, boosting efficiency.",
+      "Optimized existing models, enhancing their effectiveness.",
+    ],
+  },
+  
 
 ];
 
@@ -205,79 +229,86 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Chatbot-transformers",
+    name: "LLM PEFT Training",
     description:
-      "Successfully implemented a chatbot using Google Flan-T5 transformer.Preprocessed the first text before calling the Hugging Face embedding.Created a knowledge base using the preprocessed documents and embeddings.Deployed the knowledge base using Streamlit after saving it in .pkl Utilized the model and knowledge base to predict answers for user queries.",
-    tags: [
-      {
-        name: "ML ",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NLP",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Chatbot ",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GoogleFlanT5",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "HuggingFace ",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Streamlit",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Deployment",
-        color: "green-text-gradient",
-      },
-    ],
-    image: weathersnap,
+      "Developed FEDml to enhance LLM training, outperforming GPT-3.5 by 12%.· Incorporated PEFT for richer emotional AI interactions.· Improved AI emotional intelligence, enabling empathetic interactions. · Cut GPU costs by 60%, saving $2 million. · Boosted R&D through agile collaboration and innovative methodologies.",
+      tags: [
+        {
+          name: "FEDml",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LLM Training",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PEFT",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Emotional AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "GPU Optimization",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Cost Reduction",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Agile R&D",
+          color: "green-text-gradient",
+        },
+      ],
+      
+    image: llm,
     source_code_link: "https://github.com/afnanqasim74/huggingface-chatbot",
   },
   {
-    name: "Linear Vision",
+    name: "Chatbot-Rag",
     description:
-      "Web application that enables users with the power of DALL-E 2's API integration & an image editor resulting in a sleek and minimalist user interface to edit your images creatively.",
-    tags: [
-      {
-        name: "ML ",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NLP",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Chatbot ",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GoogleFlanT5",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "HuggingFace ",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Streamlit",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Deployment",
-        color: "green-text-gradient",
-      },
-      
-      
-    ],
-    image: linearvision,
+      "· Developed a Retrieval-Augmented Generation (RAG) based AI chatbot for the Ezelogs construction platform, leveraging its entire knowledge base to automate appointment booking, email handling, and Google Meet scheduling, improving operational efficiency by 35% and increasing client satisfaction scores by 25%. · Utilized LangChain and LangGraph frameworks for multi-agent orchestration and intelligent data retrieval, enhancing contextual understanding and boosting response accuracy by 30%. · Integrated OCR and entity recognition to extract critical information from construction documents and emails, reducing manual processing time by 40%.· Deployed the chatbot on Google Cloud Platform using Compute Engine and Cloud Storage for scalable, secure, anresilient operations.",
+      tags: [
+        {
+          name: "RAG",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LangChain",
+          color: "green-text-gradient",
+        },
+        {
+          name: "LangGraph",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Multi-Agent AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Google Cloud",
+          color: "green-text-gradient",
+        },
+        {
+          name: "OCR",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Entity Recognition",
+          color: "green-text-gradient",
+        },
+        {
+          name: "LLM Orchestration",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "AI Automation",
+          color: "pink-text-gradient",
+        },
+      ],
+    image: Chatbot,
     source_code_link: "https://github.com/Sharjeel-Riaz/Linear-Vision",
     
   },
@@ -300,6 +331,7 @@ const projects = [
       },
     ],
     image: hairday,
+
     source_code_link: "https://github.com/Sharjeel-Riaz/Hair-Day-Website",
   
   },
